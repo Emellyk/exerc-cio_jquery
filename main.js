@@ -5,7 +5,7 @@ $(document).ready(function() {
 
             const novaTarefa = $('#nova-tarefa').val();
             const novoItem = $(`<li>${novaTarefa}</li>`).click(function() {
-                $('ul li').css("text-decoration", "line-through");
+                $(this).css("text-decoration", "line-through");
         });
 
             $(novoItem).appendTo('ul');
